@@ -1,8 +1,12 @@
-
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("./assets/Nexa_Bold.otf") format("opentype");
+}
 body {
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
+    font-family: 'Nexa Bold', Arial, sans-serif;
 }
 .text-secondary {
     color: #484848; }
