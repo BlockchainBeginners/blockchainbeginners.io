@@ -22,7 +22,7 @@ body {
 
     li {
         display: inline-block;
-        width: 50px;
+        width: 48px;
         margin: 1rem; 
         cursor: pointer;
     }
@@ -50,7 +50,7 @@ body {
         font-weight: 500;
         font-size: 4rem;
         line-height: 75px;
-        width: 270px;
+        width: 295px;
         padding: 10px;
         padding-bottom: 0;
         border: 8px solid white;
@@ -69,6 +69,7 @@ body {
         h2 {
             bottom: 15px;
             right: 30px;
+            width: 275px;
         }
     }
 }
