@@ -1,24 +1,17 @@
 body {
-    color: #191919;
+    color: #fff;
+    background: rgba(40, 55, 125, .03);
 }
 .logo {
-    margin: 4rem auto;
-    width: 380px;
+    margin: 4rem auto 2rem;
+    width: 350px;
     display: block;
-}
-.hero-text {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 4rem;
-    width: 100%;
-    margin: 0;
-    text-transform: uppercase;
-    border: 7px solid black;
 }
 .social-bar {
     list-style: none;
     text-align: center;
     padding-left: 0;
+    margin: 2rem;
 
     li {
         display: inline-block;
@@ -32,9 +25,12 @@ body {
     }
 }
 .dark-background {
-    background-color: #191919;
     background-color: #28377D;
-    color: #fff;
+
+    &.events,
+    &.contact {
+        margin-top: 1rem;
+    }
 }
 
 .image-container {
@@ -57,7 +53,7 @@ body {
     }
 
     &.left {
-        background-image: url("./assets/ali&angi.jpg");
+        background-image: url("./assets/ali_angi.webp");
 
         h2 {
             left: 15px;
@@ -65,7 +61,7 @@ body {
         }
     }
     &.right {
-        background-image: url("./assets/meetup3.jpg");
+        background-image: url("./assets/meetup3.webp");
         h2 {
             bottom: 15px;
             right: 30px;
@@ -100,9 +96,6 @@ body {
         .meetup-logo {
             width: 265px;
         }
-        .twitter-logo {
-            width: 150px;
-        }
     }
 }
 
@@ -128,11 +121,12 @@ body {
         p {
             opacity: 0;
             position: absolute;
-            top: 85px;
-            left: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             font-weight: 400;
-            font-size: 22px;
             color: white;
+            font-size: 18px;
             z-index: 1;
             transition: opacity .3s;
         }
@@ -148,33 +142,31 @@ body {
 
         &.goose {
             margin: 2rem auto;
-            background-image: url('./assets/profile_angus.jpeg');
+            background-image: url('./assets/profile_angus.webp');
         }
         &.band {
             margin: auto;
-            background-image: url('./assets/band_headshot.jpg');
+            background-image: url('./assets/band_headshot.webp');
         }
-    }
-}
-
-
-@media (min-width: 586px) {
-    .hero-text {
-        width: 340px;
-        margin: 6rem auto;
     }
 }
 
 @media (min-width: 768px) {
-    .hero-text {
-        font-size: 4rem;
-        width: 440px;
+    .logo {
+        width: 370px;
     }
     .dark-background {
         margin-bottom: 2rem;
     }
     .image-container {
-        height: 600px;
+
+        &.left {
+            height: 530px;
+        }
+
+        &.right {
+            height: 505px;
+        }
     }   
     .events,
     .contact {
@@ -186,10 +178,6 @@ body {
             font-size: 4rem;
         }
     } 
-    .twitter-logo {
-        margin-left: 3rem;
-        width: 120px;
-    }
     .headshots {
         width: 465px;
         margin: 3rem auto;
@@ -211,7 +199,15 @@ body {
 }
 
 @media (min-width: 992px) {
+    .logo {
+        width: 400px;
+    }
     .image-container {
-        height: 430px;
+        &.left {
+            height: 430px;
+        }
+        &.right {
+            height: 410px;
+        }
     }
 }
