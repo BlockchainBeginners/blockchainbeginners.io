@@ -1,0 +1,213 @@
+body {
+    color: #fff;
+    background: rgba(40, 55, 125, .03);
+}
+.logo {
+    margin: 4rem auto 2rem;
+    width: 350px;
+    display: block;
+}
+.social-bar {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 2rem;
+
+    li {
+        display: inline-block;
+        width: 48px;
+        margin: 1rem; 
+        cursor: pointer;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+.dark-background {
+    background-color: #28377D;
+
+    &.events,
+    &.contact {
+        margin-top: 1rem;
+    }
+}
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 75px;
+        width: 295px;
+        padding: 10px;
+        padding-bottom: 0;
+        border: 8px solid white;
+    }
+
+    &.left {
+        background-image: url("./assets/ali_angi.webp");
+
+        h2 {
+            left: 15px;
+            bottom: 5px;        
+        }
+    }
+    &.right {
+        background-image: url("./assets/meetup3.webp");
+        h2 {
+            bottom: 15px;
+            right: 30px;
+            width: 275px;
+        }
+    }
+}
+
+.description {
+    padding-top: 1rem;
+}
+
+.events,
+.contact {
+    .content {
+        padding: 2rem 0;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    .logo-container {
+        margin: auto;
+        margin-top: 3rem;
+        
+        img {
+            cursor: pointer;
+        }
+        .meetup-logo {
+            width: 265px;
+        }
+    }
+}
+
+.headshots {
+    .headshot-container {
+        border-radius: 50%;
+        background-size: contain;
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+            content: '';
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: black;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        p {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 400;
+            color: white;
+            font-size: 18px;
+            z-index: 1;
+            transition: opacity .3s;
+        }
+
+        &:hover {
+            &:after {
+                opacity: .3;
+            }
+            p {
+                opacity: 1;
+            }
+        }
+
+        &.goose {
+            margin: 2rem auto;
+            background-image: url('./assets/profile_angus.webp');
+        }
+        &.band {
+            margin: auto;
+            background-image: url('./assets/band_headshot.webp');
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 370px;
+    }
+    .dark-background {
+        margin-bottom: 2rem;
+    }
+    .image-container {
+
+        &.left {
+            height: 530px;
+        }
+
+        &.right {
+            height: 505px;
+        }
+    }   
+    .events,
+    .contact {
+        .content {
+            padding: 2rem;
+        }
+
+        h2 {
+            font-size: 4rem;
+        }
+    } 
+    .headshots {
+        width: 465px;
+        margin: 3rem auto;
+
+        .headshot-container {
+            float: left;
+            width: 200px;
+            height: 200px;
+    
+            &.goose,
+            &.band {
+                margin: 0;
+            }
+            &.goose {
+                margin-right: 4rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 400px;
+    }
+    .image-container {
+        &.left {
+            height: 430px;
+        }
+        &.right {
+            height: 410px;
+        }
+    }
+}

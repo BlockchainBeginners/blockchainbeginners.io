@@ -1,1 +1,3 @@
-# blockchainbeginners.io
+# blockchainbeginners
+
+Website for Blockchain Beginners
