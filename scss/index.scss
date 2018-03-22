@@ -53,7 +53,7 @@ body {
     }
 
     &.left {
-        background-image: url("./assets/ali_angi.webp");
+        background-image: url("./assets/ali_angi.jpg");
 
         h2 {
             left: 15px;
@@ -61,7 +61,7 @@ body {
         }
     }
     &.right {
-        background-image: url("./assets/meetup3.webp");
+        background-image: url("./assets/meetup3.jpg");
         h2 {
             bottom: 15px;
             right: 30px;
@@ -126,7 +126,7 @@ body {
             transform: translate(-50%, -50%);
             font-weight: 400;
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             z-index: 1;
             transition: opacity .3s;
         }
@@ -142,11 +142,11 @@ body {
 
         &.goose {
             margin: 2rem auto;
-            background-image: url('./assets/profile_angus.webp');
+            background-image: url('./assets/profile_angus.jpg');
         }
         &.band {
             margin: auto;
-            background-image: url('./assets/band_headshot.webp');
+            background-image: url('./assets/band_headshot.jpg');
         }
     }
 }
